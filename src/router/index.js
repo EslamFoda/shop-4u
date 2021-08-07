@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Product from '../components/Details.vue'
+import Wishlist from '../components/Wishlist.vue'
+import Cart from '../components/Viewcart.vue'
 
 const routes = [
   {
@@ -8,12 +11,20 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path:'/product/:id',
+    name:'Product',
+    component:Product,
+    props: true
+  },
+  {
+    path:'/wishlist',
+    name:'Wishlist',
+    component:Wishlist
+  },
+  {
+    path:'/cart',
+    name:'Cart',
+    component: Cart
   }
 ]
 
