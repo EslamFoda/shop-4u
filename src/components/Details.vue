@@ -31,7 +31,7 @@
         <router-link class="home-nav" :to="{name:'Home'}">
 <span class="home-nav">Home</span>
         </router-link>
-<span class="material-icons arrow-icon">keyboard_arrow_right</span>
+<span class="material-icons-outlined arrow-icon">keyboard_arrow_right</span>
 <span class="product-name">{{product.title}}</span>
     </div>
     <div class="product-details-grid">
@@ -46,11 +46,11 @@
                 <h1 class="mid-product-name">{{product.title}}</h1>
                 <h1 class="price-mid">${{product.price}} USD</h1>
                 <div class="review">
-                    <span class="material-icons">star_rate</span>
-                    <span class="material-icons">star_rate</span>
-                    <span class="material-icons">star_rate</span>
-                    <span class="material-icons">star_rate</span>
-                    <span class="material-icons">star_rate</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
                     <p>5 reviews</p>
                 </div>
                 </div>
